@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341f70c621778da438579b141471404b, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  songInfors:
+  - songID: 0
+    name: Buddhist 1
+    price: 200
+    song: {fileID: 8300000, guid: 5b4cae3298e9d7948825c72417b793d3, type: 3}
+    icon: {fileID: 21300000, guid: 99a72daadcc4efe4681e53051f5d5106, type: 3}
+    musicalObject: {fileID: 0}
+  - songID: 1
+    name: Buddhist 2
+    price: 200
+    song: {fileID: 8300000, guid: e3007fb1288280843b07d4761990a4a3, type: 3}
+    icon: {fileID: 21300000, guid: 004987d3925a82e42802c6c472cdbc63, type: 3}
+    musicalObject: {fileID: 0}
+  - songID: 2
+    name: Buddhist 3
+    price: 200
+    song: {fileID: 8300000, guid: 0dfe391e99c4f9b47befaa09ba9803e2, type: 3}
+    icon: {fileID: 21300000, guid: 9a657aa3a6bad204fba87fb46a58c297, type: 3}
+    musicalObject: {fileID: 0}
+  - songID: 3
+    name: Buddhist 4
+    price: 200
+    song: {fileID: 8300000, guid: 5085e25191d8fb64a82529f0053daf56, type: 3}
+    icon: {fileID: 21300000, guid: 975a2beeb8697a8479dd3260fc11760d, type: 3}
+    musicalObject: {fileID: 0}
+  - songID: 4
+    name: Buddhist 5
+    price: 200
+    song: {fileID: 8300000, guid: 850ee8c0f54d28c4c972229f8c46336c, type: 3}
+    icon: {fileID: 21300000, guid: 3f2648ea2075d5e4186c315da453352d, type: 3}
+    musicalObject: {fileID: 0}
+  folderPath: Assets/Buddha/Songs
