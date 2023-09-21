@@ -7,18 +7,18 @@ using UnityEngine.Purchasing.Security;
 
 public class IAPKey
 {
-    public const string PACK1 = "game7_1_buddhist";
-    public const string PACK2 = "game7_2_buddhist";
-    public const string PACK3 = "game7_3_buddhist";
-    public const string PACK4 = "game7_4_buddhist";
-    public const string PACK5 = "game7_5_buddhist";
-    public const string PACK6 = "game7_6_buddhist";
+    public const string PACK1 = "song_app_1_buddhist";
+    public const string PACK2 = "song_app_2_buddhist";
+    public const string PACK3 = "song_app_3_buddhist";
+    public const string PACK4 = "song_app_4_buddhist";
+    public const string PACK5 = "song_app_5_buddhist";
+    public const string PACK6 = "song_app_6_buddhist";
     
-    public const string PACK1_REGISTER = "game7_register_1_buddhist";
-    public const string PACK2_REGISTER = "game7_register_2_buddhist";
-    public const string PACK3_REGISTER = "game7_register_3_buddhist";
-    public const string PACK4_REGISTER = "game7_register_4_buddhist";
-    public const string PACK5_REGISTER = "game7_register_5_buddhist";
+    public const string PACK1_REGISTER = "song_app_register_1_buddhist";
+    public const string PACK2_REGISTER = "song_app_register_2_buddhist";
+    public const string PACK3_REGISTER = "song_app_register_3_buddhist";
+    public const string PACK4_REGISTER = "song_app_register_4_buddhist";
+    public const string PACK5_REGISTER = "song_app_register_5_buddhist";
 }
 
 public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
@@ -101,7 +101,7 @@ public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
     private bool IsInitialized()
     {
         // Only say we are initialized if both the Purchasing references are set.
-        return true;
+        return storeController != null && extensionProvider != null;;
     }
 
     public void OnInitialized(IStoreController controller, IExtensionProvider extensions)
