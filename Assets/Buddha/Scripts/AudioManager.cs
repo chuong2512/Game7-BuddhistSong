@@ -1,6 +1,7 @@
 using System;
 using SingleApp;
 using UnityEngine;
+using UnityEngine.UI;
 
 [DefaultExecutionOrder(-99)]
 public class AudioManager : Singleton<AudioManager>
@@ -45,6 +46,12 @@ public class AudioManager : Singleton<AudioManager>
         musicSource.Play();
         _isPlaying = true;
         GameManager.OnPlayMusic?.Invoke(_isPlaying);
+    }
+
+    public void SetVolume(float volume)
+    {
+        musicSource.volume = volume;
+        GameDataManager.Instance.playerData.SetVolume(volume);
     }
 
     public void ClickPlayBtn()

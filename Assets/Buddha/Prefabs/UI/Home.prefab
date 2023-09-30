@@ -609,7 +609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ee4c4ca6cfa61144afedeeae597be3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _screenType: 7
+  _screenType: 10
 --- !u!1 &4731892362049224790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,6 +1125,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 517871133539394432, guid: 7f347a40b202ad74a8f3dac5e1e94053, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407626295128928298, guid: 7f347a40b202ad74a8f3dac5e1e94053, type: 3}
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6407626295128928298, guid: 7f347a40b202ad74a8f3dac5e1e94053, type: 3}

@@ -11,6 +11,7 @@ public class Constant
 
 public class PlayerData : BaseData
 {
+    public float volume;
     public int intDiamond;
     public int crtMusicalIns;
     public bool[] listMusical;
@@ -56,6 +57,8 @@ public class PlayerData : BaseData
 
     public override void ResetData()
     {
+        volume = 1;
+        
         timeRegister = DateTime.Now.ToBinary().ToString();
         time = 7 * 24 * 60 * 60;
 
@@ -129,6 +132,12 @@ public class PlayerData : BaseData
     public void ChooseSong(int i)
     {
         crtMusicalIns = i;
+        Save();
+    }
+
+    public void SetVolume(float newVolume)
+    {
+        volume = newVolume;
         Save();
     }
 }
